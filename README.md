@@ -138,7 +138,7 @@ gradient: LinearGradient(
 ),
 ```
 The `LinearGradient` widget defines a linear gradient with two colors: dark purple (`Color.fromARGB(255, 83, 50, 112)`) and light purple (`Color.fromARGB(255, 177, 131, 217)`). The gradient starts from the top-left (`Alignment.topLeft`) and ends at the bottom-right (`Alignment.bottomRight`).
-```
+
 
 ## Running the Application
 
@@ -149,6 +149,7 @@ flutter pub get
 flutter run
 ```
 
-This will compile and run the Flutter application, displaying the "Hello World!" text centered on a dark red background.
 
-This README file provides a detailed explanation of each line of the Flutter application.
+
+
+
