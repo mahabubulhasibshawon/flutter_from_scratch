@@ -150,6 +150,5 @@ flutter run
 ```
 
 This will compile and run the Flutter application, displaying the "Hello World!" text centered on a dark red background.
-```
 
 This README file provides a detailed explanation of each line of the Flutter application.
