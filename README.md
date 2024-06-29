@@ -150,7 +150,7 @@ flutter run
 ```
 ## Custom widgets
 
-```markdown
+
 ### `GradiantContainer`
 
 ```dart
