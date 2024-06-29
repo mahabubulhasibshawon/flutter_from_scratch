@@ -1,8 +1,4 @@
 ## Starting flutter from scratch
-```markdown
-# Flutter
-
-This is a simple Flutter application that displays "Hello World!" on the screen with a custom background color.
 
 ## File: `main.dart`
 
