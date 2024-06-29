@@ -148,7 +148,81 @@ To run this application, ensure you have Flutter installed and configured. Then,
 flutter pub get
 flutter run
 ```
+## Custom widgets
 
+```markdown
+### `GradiantContainer`
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:stating_from_scratch/style_text.dart';
+
+class GradiantContainer extends StatelessWidget {
+  const GradiantContainer({key}) : super(key: key);
+
+  @override
+  Widget build(context) {
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color.fromARGB(255, 83, 50, 112),
+            Color.fromARGB(255, 177, 131, 217),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+      ),
+      child: const Center(
+        child: StyleText(),
+      ),
+    );
+  }
+}
+```
+This code defines a custom `GradiantContainer` widget, which is a `StatelessWidget`. It is designed to be reusable and includes the following components:
+
+#### `Container`
+
+The `Container` widget is used to create a rectangular visual element with a gradient background.
+
+#### `BoxDecoration`
+
+The `BoxDecoration` widget is used to apply a linear gradient decoration to the `Container`.
+
+#### `LinearGradient`
+
+The `LinearGradient` widget defines a linear gradient with two colors, transitioning from dark purple to light purple, starting from the top-left and ending at the bottom-right.
+
+#### `Center`
+
+The `Center` widget centers its child widget within itself.
+
+#### `StyleText`
+
+The `StyleText` widget is used as a child of the `Center` widget. This widget is assumed to be defined in a separate file (`style_text.dart`) and likely contains styled text.
+
+### Updating `main.dart`
+
+Update the `main.dart` file to use the `GradiantContainer` widget instead of directly defining the gradient in the `Scaffold`.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:stating_from_scratch/gradiant_container.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 91, 23, 23),
+        body: const GradiantContainer(),
+      ),
+    ),
+  );
+}
+```
+This updated `main.dart` file imports the `GradiantContainer` widget and uses it as the `body` of the `Scaffold`, ensuring that the gradient background and centered `StyleText` are displayed.
+```
 
 
 
